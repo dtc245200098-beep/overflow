@@ -1,0 +1,62 @@
+/* Reset CSS cơ bản */
+* {
+    box-sizing: border-box; /* Bắt buộc để padding và border không làm tăng width tổng */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* 1. Kỹ thuật clearfix bằng overflow: hidden */
+.container {
+    width: 100%;
+    overflow: hidden; /* Tạo Block Formatting Context (BFC) để ôm trọn các phần tử con dùng float */
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 30px;
+}
+
+.left-column {
+    width: 49%; /* Tổng kích thước 2 cột + khoảng cách < 100% */
+    float: left;
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.right-column {
+    width: 49%;
+    float: right;
+    background-color: #d4edda;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+/* 2. Kiểm soát nội dung tràn bằng overflow */
+.overflow-box {
+    width: 300px;
+    height: 120px;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 12px;
+    border-radius: 4px;
+    overflow: auto; /* Hiển thị thanh cuộn (scrollbar) tự động khi nội dung vượt quá kích thước chiều cao */
+}
