@@ -1,0 +1,67 @@
+/* Rest Styling cơ bản */
+* {
+    box-sizing: border-box; /* Tính kích thước gồm cả padding và border */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1 {
+    margin: 20px 0;
+}
+
+/* Thanh điều hướng */
+nav {
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Khối nội dung chính */
+section {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 10px;
+}
+
+.box {
+    display: inline-block;
+    width: 30%; /* Chiếm 30% chiều rộng mỗi cột */
+    margin: 0 1.5%; /* Lề hai bên để tổng 3 cột = (30% + 3%) * 3 = 99% */
+    padding: 20px;
+    background-color: lightblue;
+    border-radius: 8px;
+    vertical-align: top; /* Căn lề trên cùng cho các cột */
+    text-align: left;
+}
+
+/* Chân trang */
+footer {
+    margin-top: 40px;
+    padding: 15px 0;
+    background-color: #333;
+    color: #fff;
+}
