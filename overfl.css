@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.overflow-box {
+    width: 300px;
+    height: 100px;
+    background-color: lightgray;
+    padding: 10px;
+    border: 1px solid #999;
+    
+    /* Tự động xuất hiện thanh cuộn khi nội dung tràn qua chiều cao 100px */
+    overflow: auto; 
+}
